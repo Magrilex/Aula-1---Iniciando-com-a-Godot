@@ -30,8 +30,8 @@ offset_bottom = 674.0
 texture = ExtResource("2_fcfvj")
 
 [node name="Player" parent="StaticBody2D" unique_id=656209866 instance=ExtResource("1_5xbjy")]
-position = Vector2(1314, -129)
+position = Vector2(766, -123)
 
 [node name="Player 2" parent="StaticBody2D" unique_id=322920593 instance=ExtResource("2_4nkto")]
-position = Vector2(155, 450)
+position = Vector2(585, 450)
 script = ExtResource("3_fcfvj")
