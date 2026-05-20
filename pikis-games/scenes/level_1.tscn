@@ -1,14 +1,32 @@
 [gd_scene format=3 uid="uid://rgxpcl8qd1q1"]
 
 [ext_resource type="PackedScene" uid="uid://cyeonfhhne88f" path="res://scenes/character_body_2d.tscn" id="1_014kd"]
+[ext_resource type="Texture2D" uid="uid://c5kywfxdbbyw1" path="res://assets/kenney_platformer-art-deluxe/Base pack/Tiles/boxAlt.png" id="2_rus8k"]
+[ext_resource type="Texture2D" uid="uid://dejkn13trdk6e" path="res://imagens/360_F_599720625_N2U8AQzhS5y7llrp2AMAQmKL4B6nWHKT.jpg" id="3_rus8k"]
 
 [node name="Level1" type="Node2D" unique_id=1267701657]
 
-[node name="Player" parent="." unique_id=1881155869 instance=ExtResource("1_014kd")]
-position = Vector2(0, -1)
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2038970903]
+offset_left = -1039.0
+offset_top = -327.0
+offset_right = 1584.0
+offset_bottom = 421.0
+texture = ExtResource("3_rus8k")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=397660080]
+visible = false
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1697477062]
+position = Vector2(-304, 253)
+scale = Vector2(7.6857142, 1)
+texture = ExtResource("2_rus8k")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1735355099]
+position = Vector2(328, 312)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1840592943]
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=1779396966]
+
+[node name="Player" parent="." unique_id=1881155869 instance=ExtResource("1_014kd")]
+position = Vector2(141, 232)
