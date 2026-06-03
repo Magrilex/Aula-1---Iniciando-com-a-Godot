@@ -5750,6 +5750,14 @@ distance = -890.76025
 normal = Vector2(-0.9865457, -0.16348593)
 distance = -708.8521
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_5xbjy"]
+normal = Vector2(0.008333044, 0.9999653)
+distance = -336.91327
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_4nkto"]
+normal = Vector2(0.020828815, -0.9997831)
+distance = -457.65067
+
 [node name="Level1" type="Node2D" unique_id=1267701657]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=359890148]
@@ -5771,7 +5779,7 @@ tile_map_data = PackedByteArray("AAAjAAUAAAAIAAMAAAADAPb/AAAGAAUAAAAHAPb/AAAGAAQ
 tile_set = SubResource("TileSet_rus8k")
 
 [node name="Player" parent="." unique_id=1881155869 instance=ExtResource("1_014kd")]
-position = Vector2(-418, 212)
+position = Vector2(-412, 208)
 
 [node name="ParedeDireita" type="StaticBody2D" parent="." unique_id=734607604]
 
@@ -5786,3 +5794,13 @@ metadata/_edit_group_ = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ParedeEsquerda" unique_id=1114650250]
 rotation = 2.9719298
 shape = SubResource("WorldBoundaryShape2D_rus8k")
+
+[node name="Cima" type="StaticBody2D" parent="." unique_id=289367874]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cima" unique_id=1971176118]
+shape = SubResource("WorldBoundaryShape2D_5xbjy")
+
+[node name="Baixo" type="StaticBody2D" parent="." unique_id=1013810122]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Baixo" unique_id=1588051703]
+shape = SubResource("WorldBoundaryShape2D_4nkto")

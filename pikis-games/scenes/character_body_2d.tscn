@@ -82,6 +82,7 @@ script = ExtResource("1_g2brh")
 limit_left = -658
 limit_top = -287
 limit_right = 964
+limit_bottom = 409
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=276283524]
 shape = SubResource("RectangleShape2D_4vejd")

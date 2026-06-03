@@ -1,9 +1,20 @@
 extends CharacterBody2D
 
 
+#@export var SPEED = 350.0
+#@export var JUMP_VELOCITY = -600.0
 const SPEED = 350.0
 const JUMP_VELOCITY = -600.0
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+
+
+func _ready() -> void:
+	print("Player criado")
+	var vidas:int = 200
+	print("VIDAS : "+str(vidas))
+	
+	var posicao_inical: Vector2 = Vector2(100, 100)
+	
 
 
 func _physics_process(delta: float) -> void:
@@ -39,3 +50,9 @@ func _physics_process(delta: float) -> void:
 		animated_sprite_2d.play("jump")
 	
 	move_and_slide()
+	
+	#var speed = 200 (tipagem dinaminca)
+	#var speed: int = 200 (tipagem explicita)
+	#var speed := 200 (tipagem inferida pela Godot)
+	#const speed = 200 (constante, nao pode ser alterada)
+	
